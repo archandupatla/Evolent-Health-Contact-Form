@@ -26,3 +26,7 @@ I've also did the production build and hosted the app in amazon web services s3.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Functionality
+
+The form has five fields firstname, lastname, email, phone and status with custom validations which checks duplicate email and phone number. Contacts can be edited and deleted by clicking on the pencil icon and the trash icon as can bee seen in the rows of each contacts
