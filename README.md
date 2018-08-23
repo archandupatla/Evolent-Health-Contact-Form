@@ -27,6 +27,12 @@ I've also did the production build and hosted the app in amazon web services s3.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Folder Structure
+I've used two components contacts-form component to display the form and contacts-display component to display the list of contacts with edit and delete functionality. 
+I've used contacts service which centralizes the form functionality with methods to add, update and delete the contacts in the contacts list. 
+I've used the store-contacts service to make http (PUT and GET) requests to google's firebase console. 
+I've used a validators service to include custom validations in the form which checks the phone and email inputs for duplicate records. Unit tests are written in Jasmine supported by test runner Karma for all the different components and services in the form. 
 ## Functionality
 
 The form has five fields firstname, lastname, email, phone and status with custom validations which checks duplicate email and phone number. Contacts can be edited and deleted by clicking on the pencil icon and the trash icon as can bee seen in the rows of each contacts.
+
