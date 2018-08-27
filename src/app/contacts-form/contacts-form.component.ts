@@ -22,7 +22,7 @@ export class ContactsFormComponent implements OnInit {
       'lastname': new FormControl(null, Validators.required),
       'email':new FormControl(null, [Validators.required,Validators.email, ValidatorFunctions.dupeEmailValidator]),
       'phone': new FormControl(null, [Validators.required, ValidatorFunctions.phoneNumberValidator, ValidatorFunctions.dupePhoneNumber]),
-      'status': new FormControl('Active')
+      'status': new FormControl('active')
     })
   }
     this.contactService.editModeContacts.subscribe((contactModel)=>{
